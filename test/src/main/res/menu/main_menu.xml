@@ -7,4 +7,9 @@
           android:icon="@drawable/ic_refresh"
           plakamnerede:showAsAction="ifRoom"/>
 
+    <item android:id="@+id/options"
+          android:title="Options"
+          android:icon="@drawable/ic_filter_list"
+          plakamnerede:showAsAction="ifRoom"/>
+
 </menu>

@@ -5,11 +5,11 @@ import java.io.Serializable;
 /**
  * This class represents file model referenced at
  * 'content.json' file's files field.
+ * </br></br>
+ * Created on 1/21/15</br>
+ * Created @ Valensas
  *
  * @see com.valensas.vlsync.lib.VLSyncContentFile#files
- *
- * Created on 1/21/15
- * Created @ Valensas
  *
  * @author Furkan Bayraktar
  * @version 1.0

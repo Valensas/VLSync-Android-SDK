@@ -13,9 +13,11 @@ import java.util.Map;
 /**
  * VLSync is used to handle file synchronization between
  * your mobile application and your VLSync project on web.
- *
- * Created on 1/19/15
+ * <br/><br/>
+ * Created on 1/19/15<br/>
  * Created @ Valensas
+ *
+ * @see <a href="http://vlsync.valensas.com" target="_blank">VLSync Portal</a> for more information
  *
  * @author Furkan Bayraktar
  * @version 1.0

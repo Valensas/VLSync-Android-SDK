@@ -3,8 +3,8 @@ package com.valensas.vlsync.lib;
 /**
  * This class represents an error object to be
  * delivered to library user in case of a failure.
- *
- * Created on 1/21/15
+ * </br></br>
+ * Created on 1/21/15</br>
  * Created @ Valensas
  *
  * @author Furkan Bayraktar

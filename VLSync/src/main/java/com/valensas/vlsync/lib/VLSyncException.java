@@ -3,11 +3,11 @@ package com.valensas.vlsync.lib;
 /**
  * This class represents a custom {@link java.lang.RuntimeException}
  * for VLSync library.
+ * </br></br>
+ * Created on 1/19/15</br>
+ * Created @ Valensas
  *
  * @see java.lang.RuntimeException
- *
- * Created on 1/19/15
- * Created @ Valensas
  *
  * @author Furkan Bayraktar
  * @version 1.0

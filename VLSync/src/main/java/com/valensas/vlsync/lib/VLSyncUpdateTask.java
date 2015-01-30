@@ -25,11 +25,11 @@ import java.util.Arrays;
 
 /**
  * This class represents an update task. It's an asynchronous task.
+ * </br></br>
+ * Created on 1/21/15</br>
+ * Created @ Valensas
  *
  * @see android.os.AsyncTask
- *
- * Created on 1/21/15
- * Created @ Valensas
  *
  * @author Furkan Bayraktar
  * @version 1.0
@@ -129,8 +129,8 @@ class VLSyncUpdateTask extends AsyncTask<Void, Integer, VLSyncUpdateTask.Result>
                 if (DownloadManager.STATUS_SUCCESSFUL != x) {
                     VLSync.log("Download is failed.");
                     VLSyncError error = new VLSyncError();
-                    error.setCode(9);
-                    error.setMessage("Download failure.");
+                    error.setCode(4);
+                    error.setMessage("Content file cannot be downloaded.");
                     sync.onPostExecute(false, error);
                     return;
                 }
@@ -157,7 +157,7 @@ class VLSyncUpdateTask extends AsyncTask<Void, Integer, VLSyncUpdateTask.Result>
                 if(contentFile == null){
                     VLSync.log("Content file not found.");
                     VLSyncError error = new VLSyncError();
-                    error.setCode(9);
+                    error.setCode(5);
                     error.setMessage("Content file not found.");
                     sync.onPostExecute(false, error);
                     return;
@@ -454,7 +454,7 @@ class VLSyncUpdateTask extends AsyncTask<Void, Integer, VLSyncUpdateTask.Result>
                 } catch (Exception e) {
                     VLSync.log("Moving files failed.", e);
                     VLSyncError error = new VLSyncError();
-                    error.setCode(11);
+                    error.setCode(6);
                     error.setMessage(e.getMessage());
                     sync.onPostExecute(false, error);
                 }
@@ -512,7 +512,7 @@ class VLSyncUpdateTask extends AsyncTask<Void, Integer, VLSyncUpdateTask.Result>
             } catch (Exception e) {
                 VLSync.log("Moving files failed.", e);
                 VLSyncError error = new VLSyncError();
-                error.setCode(11);
+                error.setCode(6);
                 error.setMessage(e.getMessage());
                 sync.onPostExecute(false, error);
             }
@@ -567,7 +567,7 @@ class VLSyncUpdateTask extends AsyncTask<Void, Integer, VLSyncUpdateTask.Result>
     @Override
     public void failed() {
         VLSyncError error = new VLSyncError();
-        error.setCode(5);
+        error.setCode(3);
         error.setMessage("Error downloading file: " + allFiles[currentFile].getPath());
         VLSync.log("Update task failed. " + error);
         sync.onPostExecute(false, error);

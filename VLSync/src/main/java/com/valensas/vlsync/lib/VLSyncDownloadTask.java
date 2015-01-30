@@ -13,8 +13,8 @@ import android.os.Build;
  * This class represents objects which handles a download task
  * for a specific file. When the download completed, {@link #mListener}
  * object is notified.
- *
- * Created on 1/22/15
+ * </br></br>
+ * Created on 1/22/15</br>
  * Created @ Valensas
  *
  * @author Furkan Bayraktar

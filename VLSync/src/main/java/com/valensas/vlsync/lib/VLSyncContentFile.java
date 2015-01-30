@@ -5,8 +5,8 @@ import java.io.Serializable;
 /**
  * This class represents content file model parsed from
  * 'content.json' file downloaded from VLSync server.
- *
- * Created on 1/21/15
+ * </br></br>
+ * Created on 1/21/15</br>
  * Created @ Valensas
  *
  * @author Furkan Bayraktar
